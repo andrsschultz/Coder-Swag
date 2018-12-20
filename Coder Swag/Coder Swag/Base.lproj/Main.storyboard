@@ -80,17 +80,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="VC8-Hh-tXW"/>
                     <connections>
                         <outlet property="categoryTable" destination="zqI-wn-F0G" id="yJh-xQ-HeK"/>
-                        <segue destination="e3c-YU-NJo" kind="show" id="cbJ-h2-niO"/>
+                        <segue destination="e3c-YU-NJo" kind="show" identifier="ProductsVC" id="cbJ-h2-niO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="qgK-bX-6XX">
             <objects>
-                <viewController id="e3c-YU-NJo" sceneMemberID="viewController">
+                <viewController id="e3c-YU-NJo" customClass="ProductsVC" customModule="Coder_Swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zcP-48-cKg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ym7-GY-kaj">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ym7-GY-kaj">
                                 <rect key="frame" x="0.0" y="144" width="375" height="523"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7jM-la-kfm">
@@ -115,7 +115,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QVI-FY-5nG" customClass="ProductCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Product Cell" id="QVI-FY-5nG" customClass="ProductCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -179,6 +179,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XLs-TW-wAx"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="ym7-GY-kaj" id="8g1-YY-HMx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9D-xM-wYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

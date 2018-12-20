@@ -37,7 +37,8 @@ class DataService {
         Product(title: "Devslopes Badge Shirt Light Grey", price: "$18", imageName: "shirt02.png"),
         Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirt03.png"),
         Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirt04.png"),
-        Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png")
+        Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirt03.png"),
+        Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirt04.png")
         ]
     
     private let digitalGoods = [Product]()
